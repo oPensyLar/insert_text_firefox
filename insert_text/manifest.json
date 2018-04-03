@@ -1,0 +1,44 @@
+{
+
+  "manifest_version": 2,
+  "name": "Text Arbitrary",
+  "version": "1.0",
+
+  "description": "Add arbitrary text into pages",
+
+   "permissions": [
+        "<all_urls>",
+        "clipboardRead",
+        "clipboardWrite",
+        "contextMenus",
+        "downloads",
+        "notifications",
+        "storage",
+        "unlimitedStorage",
+        "tabs",
+        "webNavigation"
+    ],
+
+  "icons": {
+    "48": "icons/img48.png",
+    "96": "icons/img96.png"
+  },
+
+
+  "content_scripts": [
+    {
+      
+      //"matches": ["*://*.steemit.com/*"],
+
+      "matches": ["http://2.2.2.1/"],      
+
+      "js": [
+              "libs/jquery.js",
+              "atext_ff.js"
+              
+
+            ]
+    }
+  ]
+
+}
