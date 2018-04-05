@@ -28,9 +28,8 @@
   "content_scripts": [
     {
       
-      //"matches": ["*://*.steemit.com/*"],
-
-      "matches": ["http://2.2.2.1/"],      
+      "matches": ["*://*.steemit.com/*"],
+      //"matches": ["*://2.2.2.1/*"],
 
       "js": [
               "libs/jquery.js",
